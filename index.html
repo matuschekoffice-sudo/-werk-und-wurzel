@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +8,44 @@
   <title>Werk und Wurzel – Traditionelles Landleben</title>
 
   <style>
+
     * {
       box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background: #f3efe5;
+      background-color: #f3efe5;
       color: #2f3828;
       line-height: 1.7;
     }
 
     header {
+      background-color: #e5dfcf;
       text-align: center;
-      padding: 35px 20px 0;
-      background: #e5dfcf;
+      padding-top: 35px;
     }
 
     .logo {
       width: 550px;
-      max-width: 95%;
+      max-width: 90%;
       height: auto;
       display: block;
       margin: 0 auto 30px;
     }
 
     nav {
-      background: #35422f;
-      padding: 16px 10px;
-      margin-left: -20px;
-      margin-right: -20px;
+      background-color: #35422f;
+      padding: 17px 15px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 16px;
       font-family: Arial, sans-serif;
       font-size: 16px;
+      margin: 0 15px;
     }
 
     nav a:hover {
@@ -58,54 +54,54 @@
 
     main {
       max-width: 950px;
-      margin: auto;
-      padding: 30px 25px;
+      margin: 0 auto;
+      padding: 60px 25px 80px;
     }
 
-    section {
-      padding: 45px 0;
-      border-bottom: 1px solid #c9c2b3;
+    .welcome {
+      text-align: center;
     }
 
     h1 {
-      font-size: 34px;
-      text-align: center;
       color: #35422f;
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
-    h2 {
-      font-size: 27px;
-      color: #35422f;
-    }
-
-    h3 {
-      color: #35422f;
-    }
-
-    p {
-      font-size: 18px;
+    .motto {
+      font-size: 21px;
+      margin-bottom: 45px;
     }
 
     .intro {
-      text-align: center;
-      font-size: 21px;
-      margin-bottom: 30px;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 19px;
     }
 
-    .box {
-      background: #e5dfcf;
-      padding: 25px;
+    .intro p {
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      background-color: #e5dfcf;
+      padding: 30px;
       border-radius: 8px;
-      margin-top: 20px;
+      margin-top: 45px;
+    }
+
+    .highlight h2 {
+      color: #35422f;
+      margin-top: 0;
     }
 
     footer {
-      background: #35422f;
+      background-color: #35422f;
       color: white;
       text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
+      padding: 28px 20px;
       font-family: Arial, sans-serif;
+      font-size: 14px;
     }
 
     footer a {
@@ -113,61 +109,80 @@
       text-decoration: underline;
     }
 
-    #impressum {
-      margin-top: 25px;
-      font-size: 14px;
-    }
+    @media (max-width: 750px) {
 
-    @media (max-width: 700px) {
       nav a {
         display: block;
-        margin: 9px 0;
-      }
-
-      h1 {
-        font-size: 28px;
+        margin: 10px 0;
       }
 
       .logo {
         width: 100%;
         max-width: 550px;
       }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      main {
+        padding: 40px 20px 60px;
+      }
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <header>
 
+<header>
+
+  <a href="index.html">
     <img
       src="Logo.jpeg"
       alt="Werk und Wurzel – Traditionelles Landleben"
       class="logo"
     >
+  </a>
 
-    <nav>
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#unser-ort">Unser Ort</a>
-      <a href="#veranstaltungen">Veranstaltungen</a>
-      <a href="#dokumente">Dokumente</a>
-      <a href="#unterstuetzung">Unterstützung</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
 
-  </header>
+  <nav>
 
-  <main>
+    <a href="index.html">Startseite</a>
 
-    <section id="ueber-uns">
+    <a href="ueber-uns.html">Über uns</a>
 
-      <h1>Werk und Wurzel</h1>
+    <a href="unser-ort.html">Unser Ort</a>
 
-      <p class="intro">
-        Gemeinschaft • Natur • Handwerk • Tradition
-      </p>
+    <a href="veranstaltungen.html">Veranstaltungen</a>
 
-      <h2>Über uns</h2>
+    <a href="dokumente.html">Dokumente</a>
+
+    <a href="unterstuetzung.html">Unterstützung</a>
+
+    <a href="kontakt.html">Kontakt</a>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+  <div class="welcome">
+
+    <h1>Willkommen bei Werk und Wurzel</h1>
+
+    <div class="motto">
+      Gemeinschaft • Natur • Handwerk • Tradition
+    </div>
+
+
+    <div class="intro">
 
       <p>
         Werk und Wurzel ist eine Gemeinschaft für Menschen,
@@ -177,155 +192,49 @@
 
       <p>
         Gemeinsam kochen, räuchern, gärtnern, bauen,
-        gestalten, lernen und Zeit in der Natur verbringen –
-        darum geht es bei Werk und Wurzel.
+        gestalten und lernen – und dabei Zeit miteinander
+        und in der Natur verbringen.
       </p>
 
       <p>
-        Dabei stehen nicht Leistung oder Perfektion im Mittelpunkt,
-        sondern Gemeinschaft, gegenseitige Unterstützung,
-        praktische Fähigkeiten und die Freude daran,
-        gemeinsam etwas zu schaffen.
+        Im Mittelpunkt stehen Gemeinschaft,
+        gegenseitige Unterstützung, praktische Fähigkeiten
+        und die Freude daran, gemeinsam etwas zu schaffen.
       </p>
 
-    </section>
-
-    <section id="unser-ort">
-
-      <h2>Unser Ort</h2>
-
-      <p>
-        Unser Treffpunkt liegt in Kananohe bei Langenhagen,
-        mitten im Grünen und umgeben von Wald und Natur.
-      </p>
-
-      <p>
-        Garten, Tiere, Teich und viel Platz bieten zahlreiche
-        Möglichkeiten für gemeinsame Projekte, handwerkliche
-        Arbeiten, Kochen, Gartenarbeit und Begegnungen
-        in der Natur.
-      </p>
-
-    </section>
-
-    <section id="veranstaltungen">
-
-      <h2>Veranstaltungen</h2>
-
-      <p>
-        Hier informieren wir künftig über geplante Treffen,
-        gemeinsame Projekte, Workshops und Veranstaltungen
-        von Werk und Wurzel.
-      </p>
-
-      <div class="box">
-        <h3>Kommende Veranstaltungen</h3>
-
-        <p>
-          Die ersten Termine werden derzeit vorbereitet
-          und hier veröffentlicht.
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Rückblicke &amp; Fotos</h3>
-
-        <p>
-          Hier entsteht nach unseren ersten Veranstaltungen
-          ein Archiv mit Berichten und Bildern unserer
-          gemeinsamen Aktivitäten.
-        </p>
-      </div>
-
-    </section>
-
-    <section id="dokumente">
-
-      <h2>Dokumente</h2>
-
-      <p>
-        Hier stellen wir wichtige Informationen und Dokumente
-        von Werk und Wurzel zur Verfügung.
-      </p>
-
-      <div class="box">
-
-        <h3>Satzung</h3>
-
-        <p>
-          Die Satzung wird hier als PDF-Dokument
-          zum Lesen und Herunterladen bereitgestellt.
-        </p>
-
-        <h3>Regelwerk</h3>
-
-        <p>
-          Unsere Regeln für Treffen, Veranstaltungen,
-          Workshops und die gemeinsame Nutzung des Geländes
-          werden ebenfalls hier veröffentlicht.
-        </p>
-
-      </div>
-
-    </section>
-
-    <section id="unterstuetzung">
-
-      <h2>Unterstützung</h2>
-
-      <p>
-        Werk und Wurzel lebt von gemeinschaftlichem Engagement,
-        Ideen, Zeit, Materialien und gegenseitiger Unterstützung.
-      </p>
-
-      <p>
-        Informationen über Möglichkeiten zur Unterstützung
-        unserer Projekte sowie gegebenenfalls Bankdaten
-        werden künftig an dieser Stelle veröffentlicht.
-      </p>
-
-    </section>
-
-    <section id="kontakt">
-
-      <h2>Kontakt</h2>
-
-      <p>
-        Sie interessieren sich für Werk und Wurzel,
-        möchten uns kennenlernen oder an einer unserer
-        Aktivitäten teilnehmen?
-      </p>
-
-      <p>
-        Dann nehmen Sie gerne Kontakt mit uns auf.
-      </p>
-
-      <div class="box">
-        <strong>Werk und Wurzel</strong><br>
-        Traditionelles Landleben<br>
-        Langenhagen – Kananohe
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-
-    <p>
-      © 2026 Werk und Wurzel – Traditionelles Landleben
-    </p>
-
-    <p>
-      <a href="#impressum">Impressum</a>
-    </p>
-
-    <div id="impressum">
-      <strong>Impressum</strong><br>
-      Angaben werden ergänzt.
     </div>
 
-  </footer>
+
+    <div class="highlight">
+
+      <h2>Gemeinsam etwas schaffen.</h2>
+
+      <p>
+        Tradition bewahren. Wissen weitergeben.
+        Natur erleben. Gemeinschaft gestalten.
+      </p>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+
+<footer>
+
+  <p>
+    © 2026 Werk und Wurzel – Traditionelles Landleben
+  </p>
+
+  <p>
+    <a href="impressum.html">Impressum</a>
+  </p>
+
+</footer>
+
 
 </body>
+
 </html>
